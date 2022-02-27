@@ -149,24 +149,24 @@
   dependencies:
     deepmerge "^2.0.0"
 
-"@processmaker/processmaker-bpmn-moddle@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@processmaker/processmaker-bpmn-moddle/-/processmaker-bpmn-moddle-0.3.0.tgz#9f74035ccf5a3ec648a43b7e256dfa4202b1f385"
-  integrity sha512-vpfVSeOK1Bw6T85XHFjd8Z0YgnJNzo1xiVI8MrEsfXjT2tZOJi4awkrduzBZWAnGkQpIcTQv67Xag8zwMQcd7w==
+"@processmaker/processmaker-bpmn-moddle@^0.4.0":
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@processmaker/processmaker-bpmn-moddle/-/processmaker-bpmn-moddle-0.4.6.tgz#a13983fb08a571cd8e39f0c9b3573b788e6b04d3"
+  integrity sha512-VSd90lwiD8E7LeDsx5WUefVC0vDv8Ua2Yl6Fm9bvzQghfYcY24J4ZiIJBZU48cgv6IrlBcuc8Wi5AhgyQ9pIww==
   dependencies:
     min-dash "^3.0.0"
 
-"@processmaker/spark-modeler@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@processmaker/spark-modeler/-/spark-modeler-0.10.0.tgz#392a1174d7eb4d71c5e1d7cd02b57718b264024b"
-  integrity sha512-vEgJgW65iyagRLEncvVWSXNeL1aI6Yz0BOCkt2omF512uHsHRGynLPANbkLRT/AxP0DG5Vcji4Ia0yEfJ8kZvA==
+"@processmaker/spark-modeler@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@processmaker/spark-modeler/-/spark-modeler-0.13.0.tgz#6744fb0e77dc3b19f948fbe2885559dc95548bc0"
+  integrity sha512-uXQVmZ3HeLDD8kOCM0qbQVAE01f9q7ACT1MACCEGkjmvHJ+aefwR5FajbXNNRN0vmBfp3dowDjLs1acnXm4KDw==
   dependencies:
     "@fortawesome/fontawesome-free" "^5.7.2"
     "@fortawesome/fontawesome-svg-core" "^1.2.6"
     "@fortawesome/free-solid-svg-icons" "^5.4.1"
     "@fortawesome/vue-fontawesome" "^0.1.1"
     "@processmaker/spark-screen-builder" "^0.12.1"
-    "@processmaker/vue-form-elements" "^0.7.0"
+    "@processmaker/vue-form-elements" "^0.8.0"
     bootstrap "^4.3.1"
     bootstrap-vue "^2.0.0-rc.14"
     bpmn-moddle "^5.1.5"
@@ -180,7 +180,6 @@
     npm "^6.4.1"
     vue "^2.5.17"
     vue-deepset "^0.6.3"
-    vue-drag-drop "^1.1.4"
     vue-upload-component "^2.8.14"
     vuejs-datepicker "^1.5.4"
     vuex "^3.0.1"
@@ -211,17 +210,32 @@
     vuedraggable "^2.16.0"
     vuetable-2 "^1.7.5"
 
-"@processmaker/vue-form-elements@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@processmaker/vue-form-elements/-/vue-form-elements-0.5.0.tgz#624b2b906bef3dbaf9434abb51b5601ac4698d5b"
-  integrity sha512-xW15t5taKSdWH4NIkNIYfW98V5vNrQ9yp4Hm3LFVtzbCCWGLjHQPH+bporSw1qEgBe+GQwBf0tRc3wHJG6Ns1Q==
+"@processmaker/spark-screen-builder@^0.14.0":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@processmaker/spark-screen-builder/-/spark-screen-builder-0.14.1.tgz#1c1c190f019fc259eb7017ba5f22400bd5286cba"
+  integrity sha512-W8wdvA6oOtg5Jqc5F2935RvPbjPWs5HsNfVBIUj3+yQaFct0Dm3fJQmjWXaY9GEWbTgsml4uJeJBIQL/Qei5+g==
   dependencies:
-    bootstrap "^4.1.3"
-    jquery "^3.3.1"
-    popper.js "^1.14.4"
+    "@fortawesome/fontawesome-free" "^5.6.1"
+    "@panter/vue-i18next" "^0.15.0"
+    "@processmaker/vue-form-elements" "^0.8.1"
+    babel-loader "^7.1.5"
+    css-tree "^1.0.0-alpha.29"
+    expr-eval "^1.2.2"
+    i18next "^15.0.8"
+    monaco-editor-webpack-plugin "^1.7.0"
+    mustache "^3.0.1"
+    node-sass "^4.9.1"
+    sass-loader "^7.0.3"
     v-calendar "^0.9.7"
     validatorjs "^3.14.2"
     vue "^2.5.16"
+    vue-deepset "^0.6.3"
+    vue-monaco "^0.3.1"
+    vue-multiselect "^2.1.3"
+    vue-uniq-ids "^1.0.0"
+    vue-upload-component "^2.8.14"
+    vuedraggable "^2.16.0"
+    vuetable-2 "^1.7.5"
 
 "@processmaker/vue-form-elements@^0.7.0":
   version "0.7.0"
@@ -240,17 +254,27 @@
     vue-datetime "^1.0.0-beta.10"
     weekstart "^1.0.0"
 
+"@processmaker/vue-form-elements@^0.8.0", "@processmaker/vue-form-elements@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@processmaker/vue-form-elements/-/vue-form-elements-0.8.1.tgz#67e1e59a75d6b5cb3a9faccd38d17009560ba8a5"
+  integrity sha512-NWqrZAuOPNGyDuy+zpW9Nh3dy0ccMoqfZtgY6arIsJcVi+OMOE1jNHm3SdkPjcB+kvAat44pnikvZv93dsvw3Q==
+  dependencies:
+    "@tinymce/tinymce-vue" "^2.0.0"
+    bootstrap "^4.2.1"
+    jquery "^3.3.1"
+    luxon "^1.11.3"
+    popper.js "^1.14.4"
+    tinymce "^5.0.1"
+    v-calendar "^0.9.7"
+    validatorjs "^3.14.2"
+    vue "^2.5.16"
+    vue-datetime "^1.0.0-beta.10"
+    weekstart "^1.0.0"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
-
-"@tinymce/tinymce-vue@^1.0.8":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-vue/-/tinymce-vue-1.1.2.tgz#78322742d268b67ad4da5544ad03cd9b7cb30326"
-  integrity sha512-nknWxb5gQv8lYXtJ7S/T8f/S15iUVcIKZfBWPRtvihv7GVrPZu3lDeNfvpdgR5VHG8YZakdhVhg/zvaT5XzPNQ==
-  dependencies:
-    vue "^2.5.17"
 
 "@tinymce/tinymce-vue@^2.0.0":
   version "2.0.0"
@@ -996,7 +1020,7 @@ babel-jest@^22.4.4:
     babel-plugin-istanbul "^4.1.5"
     babel-preset-jest "^22.4.4"
 
-babel-loader@^7.1.1:
+babel-loader@^7.1.1, babel-loader@^7.1.5:
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.5.tgz#e3ee0cd7394aa557e013b02d3e492bfd07aa6d68"
   integrity sha512-iCHfbieL5d1LfOQeeVJEUyD9rTwBcP/fcEbRCfempxTDuqrKpu0AZjLAQHEQa3Yqyj9ORKe2iHfoj4rHLf7xpw==
@@ -1651,7 +1675,7 @@ bootstrap-vue@^2.0.0-rc.11, bootstrap-vue@^2.0.0-rc.14:
     portal-vue "^2.1.1"
     vue-functional-data-merge "^2.0.7"
 
-bootstrap@^4.1.3, bootstrap@^4.2.1, bootstrap@^4.3, bootstrap@^4.3.1:
+bootstrap@^4.2.1, bootstrap@^4.3, bootstrap@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
   integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
@@ -2633,7 +2657,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-"core-js@>=2.6.5 <3.0.0", core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.3:
+"core-js@>=2.6.5 <3.0.0", core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
   integrity sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==
@@ -2978,7 +3002,7 @@ debug@^4.1.0, debug@~4.1.0:
   dependencies:
     ms "^2.1.1"
 
-debuglog@*, debuglog@^1.0.1:
+debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -5111,7 +5135,7 @@ imports-loader@^0.8.0:
     loader-utils "^1.0.2"
     source-map "^0.6.1"
 
-imurmurhash@*, imurmurhash@^0.1.4:
+imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -6437,7 +6461,7 @@ libnpm@^2.0.1:
     read-package-json "^2.0.13"
     stringify-package "^1.0.0"
 
-libnpmaccess@*, libnpmaccess@^3.0.1:
+libnpmaccess@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-3.0.1.tgz#5b3a9de621f293d425191aa2e779102f84167fa8"
   integrity sha512-RlZ7PNarCBt+XbnP7R6PoVgOq9t+kou5rvhaInoNibhPO7eMlRfS0B8yjatgn2yaHIwWNyoJDolC/6Lc5L/IQA==
@@ -6466,7 +6490,7 @@ libnpmhook@^5.0.2:
     get-stream "^4.0.0"
     npm-registry-fetch "^3.8.0"
 
-libnpmorg@*, libnpmorg@^1.0.0:
+libnpmorg@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/libnpmorg/-/libnpmorg-1.0.0.tgz#979b868c48ba28c5820e3bb9d9e73c883c16a232"
   integrity sha512-o+4eVJBoDGMgRwh2lJY0a8pRV2c/tQM/SxlqXezjcAg26Qe9jigYVs+Xk0vvlYDWCDhP0g74J8UwWeAgsB7gGw==
@@ -6491,7 +6515,7 @@ libnpmpublish@^1.1.0:
     semver "^5.5.1"
     ssri "^6.0.1"
 
-libnpmsearch@*, libnpmsearch@^2.0.0:
+libnpmsearch@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/libnpmsearch/-/libnpmsearch-2.0.0.tgz#de05af47ada81554a5f64276a69599070d4a5685"
   integrity sha512-vd+JWbTGzOSfiOc+72MU6y7WqmBXn49egCCrIXp27iE/88bX8EpG64ST1blWQI1bSMUr9l1AKPMVsqa2tS5KWA==
@@ -6500,7 +6524,7 @@ libnpmsearch@*, libnpmsearch@^2.0.0:
     get-stream "^4.0.0"
     npm-registry-fetch "^3.8.0"
 
-libnpmteam@*, libnpmteam@^1.0.1:
+libnpmteam@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/libnpmteam/-/libnpmteam-1.0.1.tgz#ff704b1b6c06ea674b3b1101ac3e305f5114f213"
   integrity sha512-gDdrflKFCX7TNwOMX1snWojCoDE5LoRWcfOC0C/fqF7mBq8Uz9zWAX4B2RllYETNO7pBupBaSyBDkTAC15cAMg==
@@ -6613,11 +6637,6 @@ lodash._basecopy@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz#8da0e6a876cf344c0ad8a54882111dd3c5c7ca36"
   integrity sha1-jaDmqHbPNEwK2KVIghEd08XHyjY=
 
-lodash._baseindexof@*:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
-  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
-
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -6626,15 +6645,10 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
-lodash._bindcallback@*, lodash._bindcallback@^3.0.0:
+lodash._bindcallback@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
   integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
-
-lodash._cacheindexof@*:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
-  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
 
 lodash._createassigner@^3.0.0:
   version "3.1.1"
@@ -6645,19 +6659,12 @@ lodash._createassigner@^3.0.0:
     lodash._isiterateecall "^3.0.0"
     lodash.restparam "^3.0.0"
 
-lodash._createcache@*:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
-  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
-  dependencies:
-    lodash._getnative "^3.0.0"
-
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
 
-lodash._getnative@*, lodash._getnative@^3.0.0:
+lodash._getnative@^3.0.0:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
   integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
@@ -6783,7 +6790,7 @@ lodash.pick@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
   integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
 
-lodash.restparam@*, lodash.restparam@^3.0.0:
+lodash.restparam@^3.0.0:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
   integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
@@ -7722,7 +7729,7 @@ npm-pick-manifest@^2.2.3:
     npm-package-arg "^6.0.0"
     semver "^5.4.1"
 
-npm-profile@*, npm-profile@^4.0.1:
+npm-profile@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/npm-profile/-/npm-profile-4.0.1.tgz#d350f7a5e6b60691c7168fbb8392c3603583f5aa"
   integrity sha512-NQ1I/1Q7YRtHZXkcuU1/IyHeLy6pd+ScKg4+DQHdfsm769TGq6HPrkbuNJVJS4zwE+0mvvmeULzQdWn2L2EsVA==
@@ -9026,9 +9033,9 @@ querystring@0.2.0:
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
-  integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 quick-lru@^1.0.0:
   version "1.1.0"
@@ -9228,7 +9235,7 @@ readable-stream@~1.1.10:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readdir-scoped-modules@*, readdir-scoped-modules@^1.0.0:
+readdir-scoped-modules@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/readdir-scoped-modules/-/readdir-scoped-modules-1.0.2.tgz#9fafa37d286be5d92cbaebdee030dc9b5f406747"
   integrity sha1-n6+jfShr5dksuuve4DDcm19AZ0c=
@@ -10640,11 +10647,6 @@ tiny-stack@^0.1.0:
   resolved "https://registry.yarnpkg.com/tiny-stack/-/tiny-stack-0.1.0.tgz#1a848173fc0bfc54e77bb2e9504d2d3c8ad79621"
   integrity sha1-GoSBc/wL/FTne7LpUE0tPIrXliE=
 
-tinymce@^4.8.1:
-  version "4.9.4"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-4.9.4.tgz#67c03d0c5a305b32f677e0680ed7909f3cfd457a"
-  integrity sha512-pht+jAPbVVEVaxGBAGqTwsVsdkI2+c/opuJ44KuD6pBJApMOQbfpGFt+XdxunyPLcxJsa7i28FIWe37W9zqeRA==
-
 tinymce@^5.0.1:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.0.4.tgz#4f398ee977b487ef16aeda188b0d981bae536eb6"
@@ -11017,9 +11019,9 @@ url-parse-lax@^3.0.0:
     prepend-http "^2.0.0"
 
 url-parse@^1.1.8, url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
@@ -11167,13 +11169,6 @@ vue-deepset@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/vue-deepset/-/vue-deepset-0.6.3.tgz#fdc644c496803bbaf8864bb3b6f639dad7e9a9dd"
   integrity sha512-Qyj40hwEAWb8LqeiayfEd9mOQWO9npCNrgQJlFwzx5sxE4+UKrc3F+dnqpgPD4T8HrBayVT3L0tyoKB1FUwtgg==
-
-vue-drag-drop@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/vue-drag-drop/-/vue-drag-drop-1.1.4.tgz#6e94aeb10304b91d651614b7307d0b90f0227e89"
-  integrity sha512-zrpvKcD5LPVbht7cJ7ZBY0poS8GDLibRck18Zx0polkoSSpTPNMAv/m/b98xtZ3I1jdWGyiPybfPgKFFkygjhQ==
-  dependencies:
-    core-js "^2.5.3"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
